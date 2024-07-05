@@ -4,11 +4,11 @@ require('dotenv').config();
 const isLocal = process.env.DATABASE_URL.includes('localhost');
 
 const pool = new Pool({
-    user: process.env.DB_USER || 'postgres',
-    host: process.env.DB_HOST || 'localhost',
-    database: process.env.DB_NAME || 'hodlinfo',
-    password: process.env.DB_PASSWORD || '1234',
-    port: process.env.DB_PORT || 5432,
+    user:'postgre',
+    host:'dpg-cq3t3qbqf0us73dnemhg-a',
+    database:'hodlinfo_e6yl',
+    password:'zzaNYdZ2by4wztIsdGulY4s19mc5obec',
+    port:5432,
     ssl: isLocal ? false : { rejectUnauthorized: false }
 });
 
