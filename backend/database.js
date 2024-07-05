@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 require('dotenv').config();
 
-const isLocal = process.env.DATABASE_URL.includes('localhost');
+const isLocal = false;
 
 const pool = new Pool({
     user:'postgre',
